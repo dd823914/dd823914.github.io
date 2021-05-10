@@ -1,34 +1,72 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="">hello spring</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-          <div>
-      <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown04">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form>
-          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-        </form>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="Fourth navbar example">
+    <div class="container d-block">
+      <div class="row">
+        <div class="col-md-2 d-flex justify-content-md-start justify-content-center">
+          <a class="navbar-brand m-0" href="index.html"><img src="images/logo.svg" alt=""></a>
+        </div>
+     
+      <div class="col-md-10 d-flex flex-column">
+          <ul class="nav d-flex justify-content-md-end justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="member.html" title="member"><i class="fas fa-users"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="cart.html" title="cart"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light dropdown-toggle"  data-bs-toggle="dropdown" href="#" title="語系"><i class="fas fa-globe"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown04">
+                <li><a class="dropdown-item" href="#">繁體中文</a></li>
+                <li><a class="dropdown-item" href="#">簡體中文</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">日本語</a></li>
+               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </li>
+          </ul>        
+      <div>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+              <ul class="navbar-nav ms-auto mt-auto">
+                <li class="nav-item">
+                  <a class="nav-link " href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aouut.html">簡介</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="news_indes.html">訊息</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="product_index.html" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">產品</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                    <li><h6><small class="ps-2">生活用品</small></h6></li>
+                    <li><a class="dropdown-item" href="product_index.html">產品一</a></li>
+                    <li><a class="dropdown-item" href="product_index.html">產品二</a></li>
+                    <li><a class="dropdown-item" href="product_index.html">產品三</a></li>
+                    <hr>
+                    <li><h6><small class="ps-2">電器用品</small></h6></li>
+                    <li><a class="dropdown-item" href="product_index.html">產品四</a></li>
+                    <li><a class="dropdown-item" href="product_index.html">產品五</a></li>
+                    <li><a class="dropdown-item" href="product_index.html">產品六</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact_form.html">聯絡</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact_map.html">據點</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </div> 
   </nav>
+  <!-- justify-content-md-start電腦 justify-content-center手機    手機優先手機不加-->
