@@ -107,7 +107,7 @@ body.home .sec2 img.img-div {
 }
 @media screen and (min-width: 768px) {
     body.home .sec2 img.img-div {
-        height: 400px;
+        height: 250px;
     }    
 }
 body.home .sec2 h2::first-letter{
